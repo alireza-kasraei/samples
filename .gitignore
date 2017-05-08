@@ -26,6 +26,7 @@ local.properties
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 
+
 # Java annotation processor (APT)
 .factorypath
 
@@ -58,3 +59,20 @@ nbdist/
 nbactions.xml
 nb-configuration.xml
 .nb-gradle/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
