@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:th="http://www.thymeleaf.org" layout:decorate="~{template}">
+<head>
+<title>Content page 1</title>
+<script src="content-script.js"></script>
+</head>
+<body>
+	<section layout:fragment="content">
+		<p>This is a paragraph from content page 1</p>
+	</section>
+	<footer>
+		<p layout:fragment="custom-footer">This is some footer content
+			from content page 1</p>
+	</footer>
+	<script th:src="@{/page2.js}"></script>
+	<th:block layout:fragment="script">
+	<script src="fifi.js"></script>
+		<script th:src="@{/page.js}"></script>
+		<script>
+                 function foo() {
+                    ...
+                 }
+            </script>
+	</th:block>
+</body>
+</html>

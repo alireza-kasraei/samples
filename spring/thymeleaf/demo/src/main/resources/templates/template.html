@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Layout page</title>
+<script src="common-script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>My website</h1>
+	</header>
+	<section layout:fragment="content">
+		<p>Page content goes here</p>
+	</section>
+	<div>test</div>
+	<footer>
+		<p>My footer</p>
+		<p layout:fragment="custom-footer">Custom footer here</p>
+	</footer>
+	
+	
+	<script src="test.js" ></script>
+	<th:block layout:fragment="script">
+	</th:block>
+</body>
+</html>
